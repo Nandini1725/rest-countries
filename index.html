@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Where in the world?</h1>
+        <button class="toggle"><i class="far fa-moon moon"></i>Dark Mode</button>
+    </div>
+    <div class="container">
+        <div class="form-control">
+            <input type="text" placeholder="Search For Country" class="search">
+            <i class="fas fa-search search"></i>
+        </div>
+        <div class="right-bar">
+            <div class="right">
+                <p>Filter By Region</p>
+                <button><i class="fas fa-chevron-down"></i></button>
+            </div>
+            <div class="list show">
+                <p class="region">All</p>
+                <p class="region">Africa</p>
+                <p class="region">America</p>
+                <p class="region">Asia</p>
+                <p class="region">Europe</p>
+                <p class="region">Oceania</p>
+            </div>
+        </div>
+    </div>
+    <div class="countries">
+    </div>
+    <div class="countryModal show">
+        <button class="back">Back</button>
+        <div class="modal">
+            <div class="leftModal">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg" alt="">
+            </div>
+            <div class="rightModal">
+                <h1>Germany</h1>
+                <div class="modalinfo">
+                    <div class="innerLeft inner">
+                        <p><strong>Native Name:</strong> ${data.population}</p>
+                        <p class="regionName"><strong>Population:</strong> ${data.region}</p>
+                        <p><strong>Region:</strong> ${data.capital}</p>
+                        <p><strong>Sub-region:</strong> ${data.capital}</p>
+                    </div>
+                    <div class="innerRight inner">
+                        <p><strong>Capital:</strong> ${data.population}</p>
+                        <p class="regionName"><strong>Top level Domain:</strong> ${data.region}</p>
+                        <p><strong>Currencies:</strong> ${data.capital}</p>
+                        <p><strong>Languages:</strong> ${data.capital}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
